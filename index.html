@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Quiz Result - Not Quite</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue",
+        Arial, sans-serif;
+      background-color: #ffffff;
+    }
+
+    .page-wrapper {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 24px;
+      background-color: #ffffff;
+    }
+
+    .card {
+      background-color: #ECE8F5; /* light purple background */
+      padding: 32px 24px 48px;
+      border-radius: 0; /* the image already has rounded corners */
+      max-width: 900px;
+      width: 100%;
+      text-align: center;
+    }
+
+    .card img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+      margin: 0 auto;
+    }
+
+    .button-row {
+      display: flex;
+      justify-content: center;
+      gap: 48px;
+      flex-wrap: wrap;
+    }
+
+    .cta-button {
+      background-color: #AF8EFF; /* button purple */
+      color: #ffffff;
+      text-decoration: none;
+      padding: 18px 64px;
+      border-radius: 10px;
+      font-size: 18px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+      display: inline-block;
+    }
+
+    .cta-button:hover {
+      background-color: #9072D8;
+    }
+
+    .cta-button:active {
+      transform: translateY(1px);
+    }
+
+    @media (max-width: 600px) {
+      .card {
+        padding: 24px 16px 32px;
+      }
+
+      .button-row {
+        gap: 24px;
+      }
+
+      .cta-button {
+        width: 100%;
+        max-width: 320px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="page-wrapper">
+    <div class="card">
+      <!-- RESULT IMAGE -->
+      <img
+        src="https://d15k2d11r6t6rl.cloudfront.net/public/users/Integrators/669d5713-9b6a-46bb-bd7e-c542cff6dd6a/d68a0bd376bc46a0950c31c47abf8022/Question%201%20-%20Incorrect_2.png"
+        alt="Not quite - quiz result"
+      />
+
+      <!-- CLICKABLE BUTTONS -->
+      <div class="button-row">
+        <a
+          href="#"
+          class="cta-button"
+        >
+          Learn More
+        </a>
+
+        <a
+          href="#"
+          class="cta-button"
+        >
+          Try Winona
+        </a>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
